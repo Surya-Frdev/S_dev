@@ -1,0 +1,32 @@
+/* Muli fonts */
+
+@font-face {
+    font-family: 'Muli, sans-serif';
+    src: url('/fonts/muli/Muli-ExtraLight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Muli, sans-serif';
+    src: url('/fonts/muli/Muli-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Muli, sans-serif';
+    src: url('/fonts/muli/Muli.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Muli, sans-serif';
+    src: url('/fonts/muli/Muli-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Muli, sans-serif';
+    src: url('/fonts/muli/Muli-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

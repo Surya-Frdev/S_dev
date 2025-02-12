@@ -1,0 +1,32 @@
+/* Josefin Sans */
+
+@font-face {
+    font-family: 'Muli, sans-serif';
+    src: url('/fonts/josefin-sans/JosefinSans-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Muli, sans-serif';
+    src: url('/fonts/josefin-sans/JosefinSans-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Muli, sans-serif';
+    src: url('/fonts/josefin-sans/JosefinSans-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Muli, sans-serif';
+    src: url('/fonts/josefin-sans/JosefinSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Muli, sans-serif';
+    src: url('/fonts/josefin-sans/JosefinSans-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}

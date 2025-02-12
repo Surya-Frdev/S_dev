@@ -1,0 +1,265 @@
+/* abou-us */
+
+/* header_start */
+.header-wrapper::after{
+    background-color: #4c55c4;
+}
+
+/* about-hero-section */
+.about-hero-content p{
+    animation: focus-in-contract 1.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) 0s 1 normal both; 
+}
+
+.about-hero-content p a{
+    transition-duration: 0ms;
+}
+
+@keyframes focus-in-contract {
+    0% { 
+        letter-spacing: 1em; 
+        transform: translateZ(100px); 
+        filter: blur(12px); 
+        opacity: 0; 
+    } 
+    100% { 
+        transform: translateZ(100px); 
+        filter: blur(0); 
+        opacity: 1;
+    } 
+}
+
+.about-hero-btn{
+    display: block;
+}
+
+.about-banner_img{
+    width: 22em;
+    margin-right: 0 !important;
+}
+
+.about-banner-hero::before{
+    content: "";
+    background: #4c55c4b8;
+    position: absolute;
+    width: 22em;
+    right: 0;
+    height: -webkit-fill-available;
+    display: inline-block;
+    z-index: 1;
+}
+
+.about-banner-hero .play-btn {
+    top: 57%;
+    left: unset;
+    right: 8%;
+    width: 20px;
+    height: 20px;
+    padding: 0px 30px 12px;
+}
+
+.about-banner-hero .play-btn::before{
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+}
+
+.about-banner-hero .play-btn::after{
+    width: 70px;
+    height: 70px;
+    background-color: #fff;
+}
+
+.about-banner-hero .play-btn span {
+    top: 3px;
+    left: 4px;
+    border-left: 18px solid #4c55c4;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+}
+
+.about-banner-hero .play-btn:hover::after{
+    background-color: #fff;
+}
+
+.dots {
+    right: 10.5em;
+    top: 5.5em;
+    position: absolute !important;
+    z-index: -1;
+    animation: infiniteMove infinite 3s ease-in-out;
+}
+
+@keyframes infiniteMove{
+    0%{
+        top: 20%;
+    }
+    50%{
+        top: 25%;
+    }
+    100%{
+        top: 20%;
+    }
+}
+
+.dots{
+    width: 160px;
+    height: 160px;
+}
+
+/* About Service */
+.about-experience-img::before, .about-experience-img::after{
+    content: "";
+    width: 170px;
+    height: 170px;
+    background-color: rgba(76, 85, 196, 0.2);
+    display: block;
+    position: absolute;
+    top: -40px;
+    left: -34px;
+    z-index: -1;
+    animation: aboutTop infinite 3s ease-in-out;
+}
+
+@keyframes aboutTop {
+    50% {
+        transform:translateY(6px);
+    }
+}
+
+.about-experience-img::after{
+    left: unset;
+    top: unset;
+    right: -14px;
+    bottom: -25px;
+    animation: aboutBottom infinite 3s ease-in-out;
+}
+
+@keyframes aboutBottom {
+    50% {
+        transform:translateY(6px);
+    }
+}
+
+.about-experience p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+/* About Customer */
+.about-customer{
+    width: 83%;
+    padding: 80px 0;
+}
+
+.customers-bg::before{
+    content: "";
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #4c55c4b8;
+    transition: all 0.8s ease-in-out;
+}
+
+.customers-container {
+    height: 325px;
+    overflow: hidden;
+}
+
+.customers-bg{
+    height: 100%;
+}
+
+.customers-bg .play-btn {
+    z-index: 10;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-14em);
+    box-sizing: content-box;
+    display: none;
+    width: 32px;
+    height: 44px;
+    border-radius: 50%;
+    padding: 26px 16px 14px 30px;
+    bottom: 0;
+}
+
+.customers-bg .play-btn::before {
+    content: "";
+    position: absolute;
+    z-index: 0;
+    left: 50%;
+    top: 2em;
+    transform: translateX(-50%) translateY(-11.5em);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #efefef;
+    border-radius: 50%;
+    animation: pulse-border 1500ms ease-out infinite;
+}
+
+.customers-bg .play-btn::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 11em;
+    transform: translateX(-50%) translateY(-11.5em);
+    display: block;
+    width: 80px;
+    height: 80px;
+    background: #efefef;
+    border-radius: 50%;
+    transition: all 200ms;
+}
+
+.customers-bg .play-btn:hover::after{
+    background-color: #efefef;
+}
+
+.customers-bg .play-btn img {
+    position: relative;
+    z-index: 3;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.customers-bg .play-btn span {
+    display: block;
+    position: relative;
+    z-index: 3;
+    width: 0;
+    top: 10.6em;
+    transform: translateY(-11.1em);
+    height: 0;
+    border-left: 24px solid #4c55c4;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+}
+
+.customers-bg:hover::before{
+    display: block;
+}
+
+.customers-bg:hover .play-btn{
+    display: block;
+}
+
+/* Our Team */
+.our-team{
+    padding: 80px 0;
+}
+.ourteam-associates{
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 2rem;
+}
+
+
+
+/* Medium Screen */
+@media screen and (max-width: 1200px){
+ 
+}
