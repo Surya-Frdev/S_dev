@@ -133,6 +133,9 @@
     footer p{
         width: 15em;
     }
+    .blog-container .card-blog .img-box {
+        width: 250px;
+    }
 }
 
 
